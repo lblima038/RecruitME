@@ -61,11 +61,3 @@ yarn dev
 ```bash
 http://localhost:3000
 ```
-
-
- - Listar instituições em formato de cards.
-
- - Perfil básico do usuário (interesses e preferências).
-
- - Estado de carregamento e feedback amigável em listas.
->>>>>>> 48a1540f84cb517e26b04c08dd4f4086e45cb451
