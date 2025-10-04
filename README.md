@@ -41,7 +41,6 @@ Antes de começar, você precisa ter instalado em sua máquina:
 # Clone o repositório
 git clone https://github.com/lblima038/GC_RecruitME.git
 ```
-<<<<<<< HEAD
 # Acesse a pasta do projeto
 ```bash
 cd seu-repositorio
@@ -62,15 +61,7 @@ yarn dev
 ```bash
 http://localhost:3000
 ```
-=======
----
-## 🚀 Funcionalidades do MVP
 
- - Listar programas com filtros (área, modalidade, nível, período).
-
- - Página de detalhes com link para edital/inscrição.
-
- - Favoritar e desfavoritar programas (persistido em localStorage).
 
  - Listar instituições em formato de cards.
 
