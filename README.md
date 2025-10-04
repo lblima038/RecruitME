@@ -1,63 +1,99 @@
 # 📚 Plataforma de Formação em TI
 
-## 📖 Descrição do Projeto
-O projeto tem como objetivo centralizar a divulgação de **programas de formação em tecnologia** (cursos rápidos, graduações, bootcamps, etc.) em uma única plataforma.  
+<div align="center">
 
-Muitas iniciativas públicas e privadas oferecem oportunidades de capacitação em TI, porém o processo de divulgação é descentralizado, o que dificulta o acesso de potenciais talentos.  
+![Status](https://img.shields.io/badge/status-em_desenvolvimento-yellow?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Chakra UI](https://img.shields.io/badge/Chakra_UI-319795?style=for-the-badge&logo=chakraui&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-593D88?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-A solução proposta é uma **aplicação web** que conecta instituições que oferecem programas de formação e estudantes interessados, de forma prática e acessível.
+</div>
 
 ---
 
-## 🎯 Funcionalidades
-- Cadastro de **empresas/instituições** com programas de formação abertos.
-- Cadastro de **usuários interessados** (alunos/estudantes).
-- Upload de **editais completos** com regras, público-alvo e período de inscrição.
-- Criação de **perfil de afinidades** para cada usuário.
-- **Alertas personalizados** sobre novos programas de acordo com o perfil do estudante.
-- Interface moderna e responsiva para fácil navegação.
+## 📖 Descrição do Projeto
+
+A **Plataforma de Formação em TI** tem como objetivo **centralizar e democratizar o acesso a programas de capacitação tecnológica**, como cursos rápidos, graduações, bootcamps e iniciativas públicas ou privadas.  
+
+Atualmente, essas oportunidades estão dispersas em diversos sites e redes sociais, o que dificulta o acesso dos interessados.  
+A proposta é desenvolver uma **aplicação web moderna, acessível e responsiva**, conectando **instituições** e **estudantes** de forma eficiente e intuitiva.
+
+---
+
+## 🎯 Funcionalidades Principais
+
+- 🏢 Cadastro de **empresas/instituições** com programas abertos  
+- 👨‍🎓 Cadastro de **usuários interessados** (alunos/estudantes)  
+- 📄 Upload de **editais completos** com regras, público-alvo e prazos  
+- 💡 Criação de **perfil de afinidades** personalizado  
+- 🔔 **Alertas automáticos** sobre novos programas compatíveis com o perfil  
+- 📱 **Interface moderna e responsiva**, construída com Chakra UI  
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-O projeto será desenvolvido com as seguintes tecnologias:
 
-- **[Next.js](https://nextjs.org/)** → Framework React para aplicações web modernas.
-- **[TypeScript](https://www.typescriptlang.org/)** → Superset de JavaScript para maior robustez.
-- **[Chakra UI](https://chakra-ui.com/)** → Biblioteca de componentes para criar interfaces acessíveis e elegantes.
-- **[Zustand](https://github.com/pmndrs/zustand)** → Gerenciamento de estado simples e eficiente.
+| Tecnologia | Descrição |
+|-------------|------------|
+| ![Next.js](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg) **Next.js** | Framework React para criação de aplicações web otimizadas e escaláveis |
+| ![TypeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg) **TypeScript** | Superset de JavaScript com tipagem estática, garantindo maior segurança e manutenção |
+| ![Chakra UI](https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/logo/logo-colored.svg) **Chakra UI** | Biblioteca de componentes acessíveis e customizáveis para interfaces modernas |
+| 🐻 **Zustand** | Biblioteca leve e performática para gerenciamento de estado global |
+
+---
+
+## 🧩 Estrutura do Projeto
+
+📦 plataforma-formacao-ti
+├── 📁 public # Imagens, ícones e arquivos estáticos
+├── 📁 src
+│ ├── 📁 components # Componentes reutilizáveis da interface
+│ ├── 📁 pages # Páginas principais da aplicação (Next.js)
+│ ├── 📁 hooks # Hooks personalizados
+│ ├── 📁 store # Gerenciamento de estado com Zustand
+│ ├── 📁 styles # Estilos globais e tema do Chakra UI
+│ └── 📁 utils # Funções auxiliares e utilitárias
+├── package.json
+├── tsconfig.json
+└── README.md
+
+
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-### Pré-requisitos
-Antes de começar, você precisa ter instalado em sua máquina:
-- [Node.js](https://nodejs.org/) (versão 18+ recomendada)
+### 🔧 Pré-requisitos
+
+Certifique-se de ter instalado:
+- [Node.js](https://nodejs.org/) (versão **18+** recomendada)
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-### Passos para rodar localmente
+### 🧭 Passos para rodar localmente
+
 ```bash
 # Clone o repositório
 git clone https://github.com/lblima038/GC_RecruitME.git
-```
+
+```bash
+
 # Acesse a pasta do projeto
+cd plataforma-formacao-ti
+
 ```bash
-cd seu-repositorio
-```
+
 # Instale as dependências
-```bash
 npm install
-# ou
-yarn install
-```
+
+```bash
+
 # Execute o servidor de desenvolvimento
-```bash
 npm run dev
-# ou
-yarn dev
-```
-# Acesse no navegador
+
 ```bash
+
+Acesse no navegador
+
 http://localhost:3000
-```
