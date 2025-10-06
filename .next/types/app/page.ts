@@ -1,4 +1,4 @@
-// File: C:\Users\gabri\OneDrive\Área de Trabalho\nextjs-chakra-zustand-app\app\page.tsx
+// File: C:\Implementacao\Projeto Desenvolvimento Web\SSL_RecruitME\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

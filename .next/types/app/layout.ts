@@ -1,4 +1,4 @@
-// File: C:\Users\gabri\OneDrive\Área de Trabalho\nextjs-chakra-zustand-app\app\layout.tsx
+// File: C:\Implementacao\Projeto Desenvolvimento Web\SSL_RecruitME\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

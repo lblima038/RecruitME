@@ -1,5 +1,5 @@
-// Esse pertence a app/lib/store/useUiStore.ts
-import create from 'zustand';
+// app/lib/store/useUiStore.ts
+import { create } from 'zustand';
 
 interface UiState {
   isRegisterModalOpen: boolean;

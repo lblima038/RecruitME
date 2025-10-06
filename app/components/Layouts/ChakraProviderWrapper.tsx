@@ -1,4 +1,4 @@
-// Esse pertence a app/components/Layouts/ChakraProviderWrapper.tsx
+// app/components/Layouts/ChakraProviderWrapper.tsx
 'use client';
 
 import { ChakraProvider } from '@chakra-ui/react';

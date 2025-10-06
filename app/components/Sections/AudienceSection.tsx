@@ -1,30 +1,26 @@
-// Esse pertence a app/Sections/AudienceSections.tsx
-import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/react';
+// app/components/Sections/AudienceSection.tsx
+import { Box, Heading, Text, SimpleGrid, Card, CardHeader, CardBody } from '@chakra-ui/react';
+import { AUDIENCE_TARGETS } from '@/lib/constants';
 
 const AudienceSection = () => {
-  const targets = [
-    { title: 'Estudantes', content: 'Our membership management software provides full automation of membership renewals and payments' },
-    { title: 'Empresas', content: 'Our membership management software provides full automation of membership renewals and payments' },
-    { title: 'Clubs And Groups', content: 'Our membership management software provides full automation of membership renewals and payments' },
-  ];
-
   return (
-    <Box py={16}>
+    <Box id="audience" py={16} bg="gray.50">
       <Heading as="h2" size="xl" textAlign="center" mb={10}>
         Para quem é o RecruitMe?
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} maxW="6xl" mx="auto" px={4}>
-        {targets.map((target) => (
-          <Box key={target.title} p={5} shadow="md" borderWidth="1px" borderRadius="lg">
-            <Heading as="h5" size="md" mb={3} color="teal.500">
-              {target.title}
-            </Heading>
-            <Text>{target.content}</Text>
-          </Box>
+        {AUDIENCE_TARGETS.map((target) => (
+          <Card key={target.title} shadow="md" borderWidth="1px" borderRadius="lg">
+            <CardHeader>
+              <Heading as="h3" size="md" color="teal.500">
+                {target.title}
+              </Heading>
+            </CardHeader>
+            <CardBody>
+              <Text>{target.content}</Text>
+            </CardBody>
+          </Card>
         ))}
-        <Text fontSize="sm" mt={4}>
-          Ache oportunidades de emprego facilmente
-        </Text>
       </SimpleGrid>
     </Box>
   );
