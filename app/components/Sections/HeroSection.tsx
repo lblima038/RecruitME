@@ -8,7 +8,7 @@ const HeroSection = () => {
         <Heading as="h1" size="2xl" mb={4}>
           Conecte-se a programas de formação em tecnologia
         </Heading>
-        <Button colorScheme="teal" size="lg" mt={6}>
+        <Button colorScheme="teal" size="lg" mt={6} as="a" href="/pages/signup">
           Registrar
         </Button>
         <Flex justify="center" align="center" mt={12} direction="column">
