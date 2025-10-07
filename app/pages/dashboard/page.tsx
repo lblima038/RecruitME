@@ -57,7 +57,6 @@ const DashboardPage = () => {
           </VStack>
         </Box>
 
-        {/* Stats Cards */}
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={6} mb={8}>
           {userLoading ? (
             [...Array(4)].map((_, i) => <Skeleton key={i} height="100px" borderRadius="lg" />)

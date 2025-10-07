@@ -16,11 +16,10 @@ import {
 } from '@chakra-ui/react';
 import { FaCalendarAlt, FaUsers, FaBookmark } from 'react-icons/fa';
 
-// Definimos os dados que este componente espera receber
 interface Opportunity {
     id: number | string;
     title: string;
-    companyName: string; // CORREÇÃO AQUI 👇 (para bater com os dados do store)
+    companyName: string;
     type: string;
     deadline: string;
     status: 'open' | 'closing-soon' | string;
