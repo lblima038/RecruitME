@@ -1,4 +1,4 @@
-// File: C:\Users\Usuário\Desktop\GC_RecruitME\GC_RecruitME\app\layout.tsx
+// File: C:\Users\Usuário\Desktop\GC_RecruitME\SSL_RecruitME\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

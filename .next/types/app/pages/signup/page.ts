@@ -1,4 +1,4 @@
-// File: C:\Users\Usuário\Desktop\GC_RecruitME\GC_RecruitME\app\pages\signup\page.tsx
+// File: C:\Users\Usuário\Desktop\GC_RecruitME\SSL_RecruitME\app\pages\signup\page.tsx
 import * as entry from '../../../../../app/pages/signup/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

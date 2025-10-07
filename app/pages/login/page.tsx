@@ -22,8 +22,10 @@ import {
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const LoginPage = () => {
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -33,7 +35,10 @@ const LoginPage = () => {
     e.preventDefault();
     // Aqui você pode adicionar a lógica de autenticação
     console.log('Login attempt:', { email, password, rememberMe });
-    // TODO: Implementar autenticação
+    // TODO: Implementar autenticação real
+    
+    // Redirecionar para o dashboard após login bem-sucedido
+    router.push('/pages/dashboard');
   };
 
   const bgColor = useColorModeValue('gray.50', 'gray.800');

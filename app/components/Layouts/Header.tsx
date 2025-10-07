@@ -9,6 +9,19 @@ import NextLink from 'next/link';
 const Header = () => {
   const openRegisterModal = useUiStore((state) => state.openRegisterModal);
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <Box as="header" p={4} borderBottomWidth="1px" borderColor="gray.200">
       <Flex justify="space-between" align="center" maxW="7xl" mx="auto">
@@ -22,7 +35,15 @@ const Header = () => {
         </Link>
         <Stack direction="row" spacing={8} display={{ base: 'none', md: 'flex' }}>
           {NAV_ITEMS.map((item) => (
-            <Link key={item.label} href={item.href} fontSize="sm" fontWeight="500">
+            <Link 
+              key={item.label} 
+              href={item.href} 
+              fontSize="sm" 
+              fontWeight="500"
+              onClick={(e) => handleSmoothScroll(e, item.href)}
+              _hover={{ color: 'teal.500', textDecoration: 'none' }}
+              cursor="pointer"
+            >
               {item.label}
             </Link>
           ))}

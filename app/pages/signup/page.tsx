@@ -23,8 +23,10 @@ import {
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const SignUpPage = () => {
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -50,7 +52,10 @@ const SignUpPage = () => {
     }
 
     console.log('Sign up attempt:', formData);
-    // TODO: Implementar registro
+    // TODO: Implementar registro real
+    
+    // Redirecionar para o dashboard após cadastro bem-sucedido
+    router.push('/pages/dashboard');
   };
 
   const handleInputChange = (field: string, value: string | boolean) => {
