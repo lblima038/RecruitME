@@ -26,9 +26,9 @@ interface UserHeaderProps {
 }
 
 const UserHeader = ({ 
-  userName = 'João Silva', 
+  userName = 'Usuário', 
   userAvatar = '',
-  userEmail = 'joao.silva@email.com'
+  userEmail = 'usuario@gmail.com',
 }: UserHeaderProps) => {
   const router = useRouter();
   const borderColor = useColorModeValue('gray.200', 'gray.700');
@@ -41,14 +41,14 @@ const UserHeader = ({
   };
 
   const handleEditProfile = () => {
-    router.push('/pages/profile');
+    router.push('/profile');
   };
 
   return (
     <Box as="header" p={4} borderBottomWidth="1px" borderColor={borderColor} bg={menuBg}>
       <Flex justify="space-between" align="center" maxW="7xl" mx="auto">
         {/* Logo */}
-        <Link as={NextLink} href="/pages/dashboard" _hover={{ textDecoration: 'none' }}>
+  <Link as={NextLink} href="/" _hover={{ textDecoration: 'none' }}>
           <Flex align="center" fontWeight="bold" color="teal.500" fontSize="xl">
             <Box as="span" display="inline-block" mr={2} verticalAlign="middle">
               <FaCheck />

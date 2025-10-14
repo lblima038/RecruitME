@@ -24,6 +24,7 @@ interface Opportunity {
     deadline: string;
     status: 'open' | 'closing-soon' | string;
     participants: number;
+    externalUrl?: string;
 }
 
 interface OpportunityCardProps {
@@ -78,9 +79,24 @@ export const OpportunityCard = ({ opportunity }: OpportunityCardProps) => {
                 <Text>{opportunity.participants} inscritos</Text>
                 </HStack>
             </HStack>
-            <Button isDisabled={isClosed} size="sm" colorScheme="teal" variant="solid" display={{ base: 'none', md: 'flex' }}>
-                Inscrever-se
-            </Button>
+                        {opportunity.externalUrl ? (
+                            <Button
+                                as="a"
+                                href={opportunity.externalUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                size="sm"
+                                colorScheme="teal"
+                                variant="solid"
+                                display={{ base: 'none', md: 'flex' }}
+                            >
+                                Abrir
+                            </Button>
+                        ) : (
+                            <Button isDisabled={isClosed} size="sm" colorScheme="teal" variant="solid" display={{ base: 'none', md: 'flex' }}>
+                                Inscrever-se
+                            </Button>
+                        )}
             </HStack>
         </CardBody>
         </Card>
@@ -90,11 +106,19 @@ export const OpportunityCard = ({ opportunity }: OpportunityCardProps) => {
         return <Box>{cardContent}</Box>;
     }
 
-    return (
-        <Link href={`/programas/${opportunity.id}`} style={{ textDecoration: 'none' }}>
-        {cardContent}
-        </Link>
-    );
+        if (opportunity.externalUrl) {
+            return (
+                <a href={opportunity.externalUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                    {cardContent}
+                </a>
+            );
+        }
+
+        return (
+            <Link href={`/programas/${opportunity.id}`} style={{ textDecoration: 'none' }}>
+                {cardContent}
+            </Link>
+        );
 };
 
 export default OpportunityCard; 

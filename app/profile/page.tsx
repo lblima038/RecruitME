@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Box,
@@ -33,12 +33,12 @@ import Footer from '@/components/Layouts/Footer';
 
 // Dados mockados - substituir por dados reais
 const MOCK_USER_DATA = {
-  name: 'Usuario',
-  email: 'Usuario@gmail.com ',
-  phone: '(81) 9999-99999',
+  name: 'usuario',
+  email: 'usuario@email.com',
+  phone: '(00) 9999-99999',
   bio: 'Estudante de Tecnologia apaixonado por desenvolvimento web e inovação.',
-  location: 'recife, PE',
-  education: 'analise e desonvolvimento de sistemas -cesar school',
+  location: 'Reicfe, PE',
+  education: 'Analise e desenvo lvimento de sistemas -cesar school',
   experience: 'Estagiário em Desenvolvimento',
   skills: 'JavaScript, React, Node.js, Python',
   linkedin: 'linkedin.com/in/usuario',
@@ -96,7 +96,7 @@ const ProfilePage = () => {
           leftIcon={<FaArrowLeft />}
           variant="ghost"
           mb={6}
-          onClick={() => router.push('/pages/dashboard')}
+          onClick={() => router.push('/dashboard')}
         >
           Voltar ao Dashboard
         </Button>

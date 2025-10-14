@@ -9,16 +9,15 @@ import NextLink from 'next/link';
 const Header = () => {
   const openRegisterModal = useUiStore((state) => state.openRegisterModal);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const targetId = href.replace('#', '');
-    const element = document.getElementById(targetId);
-    
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute('href');
+    if (!href) return;
+    // only intercept hash links for smooth scrolling, let normal links behave
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const id = href.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -34,38 +33,28 @@ const Header = () => {
           </Flex>
         </Link>
         <Stack direction="row" spacing={8} display={{ base: 'none', md: 'flex' }}>
-          {NAV_ITEMS.map((item) => (
-            <Link 
-              key={item.label} 
-              href={item.href} 
-              fontSize="sm" 
+          {NAV_ITEMS.map((navItem) => (
+            <Link
+              key={navItem.label}
+              as={NextLink}
+              href={navItem.href}
+              onClick={handleNavClick}
+              fontSize="sm"
               fontWeight="500"
-              onClick={(e) => handleSmoothScroll(e, item.href)}
               _hover={{ color: 'teal.500', textDecoration: 'none' }}
               cursor="pointer"
             >
-              {item.label}
+              {navItem.label}
             </Link>
           ))}
         </Stack>
         <HStack spacing={3}>
-          <Button
-            as={NextLink}
-            href="/pages/login"
-            variant="ghost"
-            colorScheme="teal"
-            size="sm"
-          >
+          <Button as={NextLink} href="/login" variant="ghost" colorScheme="teal" size="sm">
             Login
           </Button>
-            <Button
-            as={NextLink}
-            href="/pages/signup"
-            colorScheme="teal"
-            size="sm"
-            >
+          <Button as={NextLink} href="/signup" colorScheme="teal" size="sm">
             Registre-se agora
-            </Button>
+          </Button>
         </HStack>
       </Flex>
     </Box>

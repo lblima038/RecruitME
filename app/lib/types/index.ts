@@ -10,4 +10,5 @@ export interface Program {
   status: string,
   tags: ('frontend' | 'backend' | 'dados' | 'devops')[];
   enrollmentEndDate: string;
+  externalUrl?: string;
 }
