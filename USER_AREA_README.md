@@ -206,16 +206,16 @@ Atualmente usando dados de exemplo que devem ser substituídos por dados reais d
 
 ```typescript
 const MOCK_USER_DATA = {
-  name: 'João Silva',
-  email: 'joao.silva@email.com',
+  name: 'usuario',
+  email: 'usuario@email.com',
   phone: '(11) 99999-9999',
   bio: 'Estudante de Tecnologia...',
   location: 'São Paulo, SP',
   education: 'Ciência da Computação - USP',
   experience: 'Estagiário em Desenvolvimento',
   skills: 'JavaScript, React, Node.js, Python',
-  linkedin: 'linkedin.com/in/joaosilva',
-  github: 'github.com/joaosilva',
+  linkedin: 'linkedin.com/in/usuario',
+  github: 'github.com/usuario',
   avatar: '',
 };
 ```

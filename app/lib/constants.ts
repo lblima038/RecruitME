@@ -5,6 +5,7 @@ export const NAV_ITEMS = [
   { label: 'Para Quem?', href: '#audience' },
   { label: 'Como Funciona', href: '#how-it-works' },
   { label: 'Programas', href: '#programs' },
+  { label: 'Dashboard', href: '/dashboard' },
 ];
 
 export const COMPANY_LINKS = [

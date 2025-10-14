@@ -156,8 +156,8 @@ app/
 ### Usuário
 ```typescript
 {
-  name: 'João Silva',
-  email: 'joao.silva@email.com',
+  name: 'Usuario',
+  email: 'usuario@gmail.com',
   role: 'Estudante',
   memberSince: 'Outubro 2024'
 }
@@ -236,4 +236,3 @@ O usuário vê imediatamente:
 
 ---
 
-**Desenvolvido com ❤️ usando Next.js 14, Chakra UI e TypeScript**
