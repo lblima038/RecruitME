@@ -1,5 +1,7 @@
 // lib/constants.ts
 
+import { AtSignIcon } from "@chakra-ui/icons";
+
 export const NAV_ITEMS = [
   { label: 'Início', href: '#inicio' },
   { label: 'Para Quem?', href: '#audience' },
@@ -23,16 +25,16 @@ export const SUPPORT_LINKS = [
 
 export const AUDIENCE_TARGETS = [
   { 
-    title: 'Estudantes e Talentos', 
-    content: 'Encontre programas de formação, bootcamps e estágios em um só lugar, recebendo alertas sobre as melhores oportunidades para sua carreira.' 
+    icon: "🎓",
+    title: 'Estudantes e Talentos',   
   },
   { 
+    icon: "🏢",
     title: 'Empresas e Instituições', 
-    content: 'Divulgue seus programas de formação para um público qualificado e engajado, atraindo os melhores talentos em início de carreira.' 
   },
   { 
+    icon: "🌐",
     title: 'Comunidades de Tecnologia', 
-    content: 'Centralize a divulgação de eventos, workshops e cursos, fortalecendo o ecossistema e capacitando ainda mais pessoas na área de TI.' 
   },
 ];
 

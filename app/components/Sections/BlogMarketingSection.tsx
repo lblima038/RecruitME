@@ -1,35 +1,55 @@
-// Esse pertence a app/Sections/BlogMarketingSection.tsx
 import { Box, Heading, Text, VStack, SimpleGrid, Link } from '@chakra-ui/react';
 
 const BlogMarketingSection = () => {
     return (
         <Box py={20} textAlign="center">
+            {/* NOVO TÍTULO: Mais alinhado ao propósito da plataforma */}
             <Heading as="h2" size="xl" mb={4}>
-                Caring is the new marketing
+                Histórias de Sucesso | Conexões que Transformam
             </Heading>
             <Text maxW="3xl" mx="auto" mb={10}>
-                The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​
+                Descubra como a plataforma RecruitMe está gerando resultados reais para Talentos, Empresas e Comunidades. Leia nossos cases de sucesso, depoimentos e insights sobre o poder de uma conexão bem feita.
             </Text>
+            
+            {/* Bloco de Citação / Testemunho (Mantendo a credibilidade) */}
             <VStack mb={12}>
                 <Text fontStyle="italic" color="gray.600">
-                    "Meet all customers"
+                    “O RecruitMe acelerou nosso processo de contratação em 40%, conectando-nos a talentos que jamais encontraríamos por vias tradicionais.”
                 </Text>
-                <Text fontWeight="bold">Tim Smith</Text>
-                <Text fontSize="sm">British Dragon Boat Racing Association</Text>
+                <Text fontWeight="bold">Mariana Leal</Text>
+                <Text fontSize="sm">Head de Pessoas, Tech Solutions</Text>
             </VStack>
+            
+            {/* Artigos em Destaque (Foco em CASES) */}
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} maxW="6xl" mx="auto">
+                
+                {/* Case 1: Talento */}
                 <Box>
-                    <Heading size="sm">Creating Streamlined Safeguarding Processes with OneRen</Heading>
-                    <Link color="teal.500" mt={2}>Readmore</Link>
+                    <Heading size="sm">De Bootcamp à Estágio Sênior: A Jornada de João Silva com a Vagas.Tech</Heading>
+                    <Text fontSize="sm" mt={2} color="gray.500">
+                        Como João, recém-formado, conseguiu sua primeira vaga através de um programa de formação exclusivo anunciado na plataforma.
+                    </Text>
+                    <Link color="teal.500" mt={2} href="#">Ver Case</Link>
                 </Box>
+                
+                {/* Case 2: Empresa */}
                 <Box>
-                    <Heading size="sm">What are your safeguarding responsibilities and how can you manage them?</Heading>
-                    <Link color="teal.500" mt={2}>Readmore</Link>
+                    <Heading size="sm">40% de Otimização: Como a Accio Solutions Reformulou Seu Pipeline de Recrutamento</Heading>
+                    <Text fontSize="sm" mt={2} color="gray.500">
+                        A história de como a Accio Solutions usou as ferramentas de segmentação do RecruitMe para encontrar profissionais em nichos específicos.
+                    </Text>
+                    <Link color="teal.500" mt={2} href="#">Ver Case</Link>
                 </Box>
+                
+                {/* Case 3: Comunidade */}
                 <Box>
-                    <Heading size="sm">Revamping the Membership Model with Triathlon Australia</Heading>
-                    <Link color="teal.500" mt={2}>Readmore</Link>
+                    <Heading size="sm">Multiplicando o Alcance: A Comunidade Devs-RJ e a Divulgação de 15 Eventos em 1 Mês</Heading>
+                    <Text fontSize="sm" mt={2} color="gray.500">
+                        Entenda como o RecruitMe se tornou o principal canal de divulgação da Devs-RJ, triplicando as inscrições em workshops.
+                    </Text>
+                    <Link color="teal.500" mt={2} href="#">Ver Case</Link>
                 </Box>
+                
             </SimpleGrid>
         </Box>
     );
