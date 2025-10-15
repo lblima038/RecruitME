@@ -1,6 +1,6 @@
 const MOCK_USER = {
-  name: 'João Silva',
-  email: 'joao.silva@email.com',
+  name: 'usuario',
+  email: 'usuario@gmail.com',
   avatar: '',
 };
 

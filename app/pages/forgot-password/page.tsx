@@ -151,15 +151,7 @@ const ForgotPasswordPage = () => {
 
           {/* Back to Login */}
           <VStack mt={8} spacing={3}>
-            <Link
-              as={NextLink}
-              href="/pages/login"
-              color="teal.500"
-              fontWeight="medium"
-              display="flex"
-              alignItems="center"
-              gap={2}
-            >
+            <Link as={NextLink} href="/login" color="teal.500" fontWeight="medium" display="flex" alignItems="center" gap={2}>
               <Icon as={FaArrowLeft} />
               Voltar para login
             </Link>

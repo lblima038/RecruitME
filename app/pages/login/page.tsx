@@ -37,8 +37,8 @@ const LoginPage = () => {
     console.log('Login attempt:', { email, password, rememberMe });
     // TODO: Implementar autenticação real
     
-    // Redirecionar para o dashboard após login bem-sucedido
-    router.push('/pages/dashboard');
+  // Redirecionar para o dashboard após login bem-sucedido
+  router.push('/dashboard');
   };
 
   const bgColor = useColorModeValue('gray.50', 'gray.800');
@@ -110,13 +110,7 @@ const LoginPage = () => {
                 >
                   Lembrar-me
                 </Checkbox>
-                <Link
-                  as={NextLink}
-                  href="/pages/forgot-password"
-                  color="teal.500"
-                  fontSize="sm"
-                  fontWeight="medium"
-                >
+                <Link as={NextLink} href="/forgot-password" color="teal.500" fontSize="sm" fontWeight="medium">
                   Esqueceu a senha?
                 </Link>
               </HStack>
@@ -142,13 +136,7 @@ const LoginPage = () => {
             <Text fontSize="sm" color="gray.600">
               Não tem uma conta?
             </Text>
-            <Link
-              as={NextLink}
-              href="/pages/signup"
-              color="teal.500"
-              fontWeight="medium"
-              fontSize="sm"
-            >
+            <Link as={NextLink} href="/signup" color="teal.500" fontWeight="medium" fontSize="sm">
               Criar conta
             </Link>
           </HStack>
