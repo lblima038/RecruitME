@@ -156,16 +156,13 @@ const CompanyLoginPage = () => {
             </Link>
           </HStack>
 
-          {/* Voltar para login de candidato */}
           <HStack justify="center" mt={4}>
             <Link
               as={NextLink}
               href="/pages/login"
-              color="gray.500"
-              fontSize="sm"
-              textDecoration="underline"
+              className="text-gray-500 text-sm underline hover:text-teal-500 transition-colors"
             >
-              ← Sou candidato
+              👉 Sou um candidato? Fazer login como candidato
             </Link>
           </HStack>
         </Box>
