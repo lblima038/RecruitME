@@ -3,7 +3,6 @@ import { Box, Heading, Text, VStack, SimpleGrid, Link } from '@chakra-ui/react';
 const BlogMarketingSection = () => {
     return (
         <Box py={20} textAlign="center">
-            {/* NOVO TÍTULO: Mais alinhado ao propósito da plataforma */}
             <Heading as="h2" size="xl" mb={4}>
                 Histórias de Sucesso | Conexões que Transformam
             </Heading>
@@ -20,10 +19,8 @@ const BlogMarketingSection = () => {
                 <Text fontSize="sm">Head de Pessoas, Tech Solutions</Text>
             </VStack>
             
-            {/* Artigos em Destaque (Foco em CASES) */}
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} maxW="6xl" mx="auto">
                 
-                {/* Case 1: Talento */}
                 <Box>
                     <Heading size="sm">De Bootcamp à Estágio Sênior: A Jornada de João Silva com a Vagas.Tech</Heading>
                     <Text fontSize="sm" mt={2} color="gray.500">
@@ -32,7 +29,6 @@ const BlogMarketingSection = () => {
                     <Link color="teal.500" mt={2} href="#">Ver Case</Link>
                 </Box>
                 
-                {/* Case 2: Empresa */}
                 <Box>
                     <Heading size="sm">40% de Otimização: Como a Accio Solutions Reformulou Seu Pipeline de Recrutamento</Heading>
                     <Text fontSize="sm" mt={2} color="gray.500">
@@ -41,7 +37,6 @@ const BlogMarketingSection = () => {
                     <Link color="teal.500" mt={2} href="#">Ver Case</Link>
                 </Box>
                 
-                {/* Case 3: Comunidade */}
                 <Box>
                     <Heading size="sm">Multiplicando o Alcance: A Comunidade Devs-RJ e a Divulgação de 15 Eventos em 1 Mês</Heading>
                     <Text fontSize="sm" mt={2} color="gray.500">

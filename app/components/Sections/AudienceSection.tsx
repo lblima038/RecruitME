@@ -29,7 +29,7 @@ const AudienceSection = () => (
           {/* 3. VStack: Usado para organizar e centralizar verticalmente todo o conteúdo */}
           <VStack spacing={6} align="center"> 
             
-            {/* 4. Box do Ícone: Container que cria o fundo colorido (o "verde claro") */}
+            {/* 4. Box do Ícone*/}
             <Box
               bg="green.50" // Cor de fundo do ícone (simulando o verde claro)
               borderRadius="lg" // Bordas arredondadas
@@ -43,7 +43,7 @@ const AudienceSection = () => (
           </Text>
             </Box>
 
-            {/* 6. Título do Card: Mais escuro e maior, como na imagem */}
+            {/* 6. Título do Card: Mais escuro e maior*/}
             <Heading as="h3" size="md" color="gray.800" fontWeight="extrabold" mt={2}>
               {target.title}
             </Heading>
