@@ -198,7 +198,7 @@ const SignUpPage = () => {
             <Text fontSize="sm" color="gray.600">
               Já tem uma conta?
             </Text>
-            <Link as={NextLink} href="/login" color="teal.500" fontWeight="medium" fontSize="sm">
+            <Link as={NextLink} href="/pages/login" color="teal.500" fontWeight="medium" fontSize="sm">
               Fazer login
             </Link>
           </HStack>
