@@ -203,6 +203,17 @@ const SignUpPage = () => {
             </Link>
           </HStack>
 
+          {/* Link para alternar para cadastro empresarial */}
+          <HStack justify="center" mt={4}>
+            <Link
+              as={NextLink}
+              href="/pages/company-signup"
+              className="text-gray-500 text-sm underline hover:text-teal-500 transition-colors"
+            >
+              👉 Sou uma empresa? Fazer cadastro como empresa
+            </Link>
+          </HStack>
+
           {/* Back to Home */}
           <HStack justify="center" mt={4}>
             <Link

@@ -141,12 +141,23 @@ export default function CompanySignup() {
             </Text>
             <Link
               as={NextLink}
-              href="/pages/login"
+              href="/pages/company-login"
               color="teal.500"
               fontWeight="medium"
               fontSize="sm"
             >
               Fazer login
+            </Link>
+          </HStack>
+
+          {/* Link para alternar para cadastro de candidato */}
+          <HStack justify="center" mt={4}>
+            <Link
+              as={NextLink}
+              href="/pages/signup"
+              className="text-gray-500 text-sm underline hover:text-teal-500 transition-colors"
+            >
+              👉 Sou um candidato? Fazer cadastro como candidato
             </Link>
           </HStack>
         </Box>
