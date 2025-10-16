@@ -49,10 +49,10 @@ const Header = () => {
           ))}
         </Stack>
         <HStack spacing={3}>
-          <Button as={NextLink} href="/login" variant="ghost" colorScheme="teal" size="sm">
+          <Button as={NextLink} href="/pages/login" variant="ghost" colorScheme="teal" size="sm">
             Login
           </Button>
-          <Button as={NextLink} href="/signup" colorScheme="teal" size="sm">
+          <Button as={NextLink} href="/pages/signup" colorScheme="teal" size="sm">
             Registre-se agora
           </Button>
         </HStack>

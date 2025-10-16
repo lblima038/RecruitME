@@ -110,7 +110,7 @@ const LoginPage = () => {
                 >
                   Lembrar-me
                 </Checkbox>
-                <Link as={NextLink} href="/forgot-password" color="teal.500" fontSize="sm" fontWeight="medium">
+                <Link as={NextLink} href="/pages/forgot-password" color="teal.500" fontSize="sm" fontWeight="medium">
                   Esqueceu a senha?
                 </Link>
               </HStack>
@@ -136,7 +136,7 @@ const LoginPage = () => {
             <Text fontSize="sm" color="gray.600">
               Não tem uma conta?
             </Text>
-            <Link as={NextLink} href="/signup" color="teal.500" fontWeight="medium" fontSize="sm">
+            <Link as={NextLink} href="/pages/signup" color="teal.500" fontWeight="medium" fontSize="sm">
               Criar conta
             </Link>
           </HStack>

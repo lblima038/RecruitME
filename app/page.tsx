@@ -10,6 +10,7 @@ import { Box, Heading, Text, Button, Container,
 import Header from '@/components/Layouts/Header';
 import Footer from '@/components/Layouts/Footer';
 import BlogMarketingSection from '@/components/Sections/BlogMarketingSection';
+import LoginPage from './pages/login/page';
 
 // ...restante do código...
 // Componente simples para renderizar o emoji no lugar do ListIcon
